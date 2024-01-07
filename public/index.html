@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <!-- <script type="text/javascript">
+
+
+      const navbarMenu = document.getElementById("navbar");
+      const burgerMenu = document.getElementById("burger");
+      const overlayMenu = document.querySelector(".overlay");
+      
+      // Show and Hide Navbar Function
+      const toggleMenu = () => {
+      navbarMenu.classList.toggle("active");
+      overlayMenu.classList.toggle("active");
+      };
+      
+      // Collapsible Mobile Submenu Function
+      const collapseSubMenu = () => {
+      navbarMenu
+        .querySelector(".menu-dropdown.active .submenu")
+        .removeAttribute("style");
+      navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+      };
+      
+      // Toggle Mobile Submenu Function
+      const toggleSubMenu = (e) => {
+      if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+        e.preventDefault();
+        const menuDropdown = e.target.parentElement;
+      
+        // If Dropdown is Expanded, then Collapse It
+        if (menuDropdown.classList.contains("active")) {
+           collapseSubMenu();
+        } else {
+           // Collapse Existing Expanded Dropdown
+           if (navbarMenu.querySelector(".menu-dropdown.active")) {
+              collapseSubMenu();
+           }
+      
+           // Expanded the New Dropdown
+           menuDropdown.classList.add("active");
+           const subMenu = menuDropdown.querySelector(".submenu");
+           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        }
+      }
+      };
+      
+      // Fixed Resize Window Function
+      const resizeWindow = () => {
+      if (window.innerWidth > 992) {
+        if (navbarMenu.classList.contains("active")) {
+           toggleMenu();
+        }
+        if (navbarMenu.querySelector(".menu-dropdown.active")) {
+           collapseSubMenu();
+        }
+      }
+      };
+      
+      // Initialize Event Listeners
+      burgerMenu.addEventListener("click", toggleMenu);
+      overlayMenu.addEventListener("click", toggleMenu);
+      navbarMenu.addEventListener("click", toggleSubMenu);
+      window.addEventListener("resize", resizeWindow);
+      
+      
+      
+        </script> -->
+          </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+  </body>
+</html>
